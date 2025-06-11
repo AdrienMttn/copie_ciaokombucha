@@ -1,0 +1,157 @@
+@import url("https://cdn.prod.website-files.com/682c4cb4a0fc31e251881ee7/682c4cb4a0fc31e251881f3f_BlauerNue-Regular.woff2");
+body {
+  font-family: "BlauerNue", sans-serif;
+  width: 100vw;
+  height: 100vh;
+  margin: 0;
+  padding: 0;
+  background: url("img/bg.avif") no-repeat center center fixed;
+  background-size: cover;
+  overflow-y: hidden;
+}
+
+.grass {
+  pointer-events: none;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: url("img/grass.avif") no-repeat center center fixed;
+  background-size: cover;
+}
+header {
+  position: absolute;
+  display: grid;
+  grid-template-columns: 1fr 2fr 1fr;
+  align-items: center;
+  justify-items: center;
+  color: white;
+  width: 100vw;
+  height: 20vh;
+  z-index: 1;
+}
+.logo {
+  width: 200px;
+  height: 5vh;
+}
+.defilant {
+  width: 40%;
+  font-size: 1.2rem;
+  overflow: hidden;
+  display: flex;
+}
+.defilant p {
+  text-transform: uppercase;
+  width: fit-content;
+  white-space: nowrap;
+  animation: defilement 10s infinite linear;
+}
+
+.buttonsHeader {
+  display: flex;
+  align-items: center;
+}
+.simpleBtn {
+  background-color: white;
+  margin: 10px;
+  border: none;
+  padding: 22px 40px;
+  border-radius: 50px;
+  font-size: 1.2rem;
+  transition: 0.2s ease-in-out;
+}
+.simpleBtn:hover {
+  cursor: pointer;
+  margin: 6px;
+  padding: 27px 44px;
+  transition: 0.2s ease-in-out;
+}
+.roundBtn {
+  background-color: white;
+  margin: 20px;
+  border: none;
+  padding: 20px;
+  border-radius: 100%;
+  font-size: 1rem;
+}
+.roundBtn:hover {
+  cursor: pointer;
+  margin: 15px;
+  padding: 25px;
+  transition: 0.2s ease-in-out;
+}
+
+.section {
+  position: absolute;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.bottleContainer {
+  transform: translateY(80px);
+  padding: 0;
+  width: 100vw;
+  height: 65vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.bottle {
+  aspect-ratio: 2 / 4.8;
+  height: 100%;
+}
+
+.left {
+  transition: 0.5s ease;
+  &:hover {
+    cursor: pointer;
+    transform: translateY(-150px);
+    rotate: -10deg;
+    transition: 0.5s ease;
+  }
+}
+.right {
+  transition: 0.5s ease;
+  &:hover {
+    cursor: pointer;
+    transform: translateY(-150px);
+    rotate: 10deg;
+    transition: 0.5ss ease;
+  }
+}
+
+.citron {
+  background: url("img/citron.png") no-repeat center center;
+  background-size: contain;
+}
+.dragon {
+  background: url("img/dragon.png") no-repeat center center;
+  background-size: contain;
+}
+.peche {
+  background: url("img/peche.png") no-repeat center center;
+  background-size: contain;
+}
+.rouge {
+  background: url("img/rouge.png") no-repeat center center;
+  background-size: contain;
+}
+.gingembre {
+  background: url("img/gingembre.png") no-repeat center center;
+  background-size: contain;
+}
+.menthe {
+  background: url("img/menthe.png") no-repeat center center;
+  background-size: contain;
+}
+
+@keyframes defilement {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}
